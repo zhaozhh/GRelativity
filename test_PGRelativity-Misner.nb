@@ -1,0 +1,400 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 7.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[     16011,        392]
+NotebookOptionsPosition[     14599,        338]
+NotebookOutlinePosition[     15065,        356]
+CellTagsIndexPosition[     15022,        353]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"<<", "PGRelativityMisner5.m"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{"xC", "=", 
+     RowBox[{"{", 
+      RowBox[{"t", ",", "r", ",", "\[Theta]", ",", "\[Phi]"}], "}"}]}], ";", 
+    "\n", 
+    RowBox[{"Mgdd", "=", 
+     TagBox[
+      RowBox[{"\[NoBreak]\[NoBreak]", 
+       RowBox[{"(", "\[NoBreak]\[NoBreak]\[NoBreak]", GridBox[{
+          {
+           RowBox[{
+            RowBox[{"-", 
+             SuperscriptBox["c", "2"]}], 
+            RowBox[{"(", 
+             RowBox[{"1", "-", 
+              RowBox[{"2", "G", " ", 
+               FractionBox["M", 
+                RowBox[{
+                 SuperscriptBox["c", "2"], " ", "r"}]]}]}], ")"}]}], "0", "0",
+            "0"},
+          {"0", 
+           FractionBox["1", 
+            RowBox[{"1", "-", 
+             RowBox[{"2", "G", " ", 
+              FractionBox["M", 
+               RowBox[{
+                SuperscriptBox["c", "2"], "r"}]]}]}]], "0", "0"},
+          {"0", "0", 
+           SuperscriptBox["r", "2"], "0"},
+          {"0", "0", "0", 
+           RowBox[{
+            SuperscriptBox["r", "2"], 
+            SuperscriptBox[
+             RowBox[{"Sin", "[", "\[Theta]", "]"}], "2"]}]}
+         }], "\[NoBreak]", ")"}]}],
+      Function[BoxForm`e$, 
+       MatrixForm[BoxForm`e$]]]}], ";"}], "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{"xC", "=", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"\[Theta]", ",", "\[Phi]"}], "}"}], "\[IndentingNewLine]", 
+      RowBox[{"Mgdd", "=", 
+       TagBox[
+        RowBox[{"\[NoBreak]\[NoBreak]", 
+         RowBox[{"(", "\[NoBreak]\[NoBreak]\[NoBreak]", GridBox[{
+            {
+             SuperscriptBox["r", "2"], "0"},
+            {"0", 
+             RowBox[{
+              SuperscriptBox["r", "2"], 
+              SuperscriptBox[
+               RowBox[{"Sin", "[", "\[Theta]", "]"}], "2"]}]}
+           }], "\[NoBreak]", ")"}]}],
+        Function[BoxForm`e$, 
+         MatrixForm[BoxForm`e$]]]}]}]}], ";", 
+    RowBox[{"(*", "\:7a7a\:95f4\:662f\:5f2f\:66f2\:7684", "*)"}], 
+    "\[IndentingNewLine]", 
+    RowBox[{"xC", "=", 
+     RowBox[{"{", 
+      RowBox[{"r", ",", "\[Theta]", ",", "\[Phi]"}], "}"}]}], ";", "\n", 
+    RowBox[{"Mgdd", "=", 
+     TagBox[
+      RowBox[{"\[NoBreak]\[NoBreak]", 
+       RowBox[{"(", "\[NoBreak]\[NoBreak]\[NoBreak]", GridBox[{
+          {"1", "0", "0"},
+          {"0", 
+           SuperscriptBox["r", "2"], "0"},
+          {"0", "0", 
+           RowBox[{
+            SuperscriptBox["r", "2"], 
+            SuperscriptBox[
+             RowBox[{"Sin", "[", "\[Theta]", "]"}], "2"]}]}
+         }], "\[NoBreak]", ")"}]}],
+      Function[BoxForm`e$, 
+       MatrixForm[BoxForm`e$]]]}], ";"}], 
+   RowBox[{"(*", "\:7a7a\:95f4\:662f\:5e73\:76f4\:7684\:7684", "*)"}], 
+   "*)"}]}], "\n", 
+ RowBox[{
+  RowBox[{"GRInitialization", "[", "]"}], ";"}], "\n"}], "Input",
+ CellChangeTimes->{
+  3.4803987263269997`*^9, {3.4804771056224766`*^9, 3.4804771144854765`*^9}, {
+   3.480477206236477*^9, 3.480477207840477*^9}, 3.4804772505634766`*^9, {
+   3.480478683128477*^9, 3.480478697965477*^9}, {3.480480709090477*^9, 
+   3.480480733489477*^9}, {3.4804843977384768`*^9, 3.480484403806877*^9}, {
+   3.607915692725802*^9, 3.607915769802511*^9}, {3.6079193404599047`*^9, 
+   3.6079193602077017`*^9}, {3.607919400734097*^9, 3.607919422176655*^9}, {
+   3.60798156851869*^9, 3.6079815689487658`*^9}, {3.608327372225481*^9, 
+   3.6083274250873413`*^9}, {3.608327640655521*^9, 3.608327669029086*^9}, {
+   3.608328090114861*^9, 3.608328105123752*^9}, {3.608407815098859*^9, 
+   3.6084078553638372`*^9}, {3.611980280130394*^9, 3.611980424683144*^9}, {
+   3.611980470417264*^9, 3.6119804744135838`*^9}, {3.6119815232721767`*^9, 
+   3.6119815294581614`*^9}, {3.6119816252000837`*^9, 3.61198163092518*^9}, {
+   3.7431412761377487`*^9, 3.7431413311443996`*^9}, {3.754812554285195*^9, 
+   3.754812600755599*^9}, {3.7548127903963594`*^9, 3.7548128744740868`*^9}, {
+   3.754812909406152*^9, 3.7548129144554415`*^9}, {3.7548129475387006`*^9, 
+   3.754812974481498*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"1", ",", "0", ",", "0"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", 
+     SuperscriptBox["r", "2"], ",", "0"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "0", ",", 
+     RowBox[{
+      SuperscriptBox["r", "2"], " ", 
+      SuperscriptBox[
+       RowBox[{"Sin", "[", "\[Theta]", "]"}], "2"]}]}], "}"}]}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.754812604104882*^9, 3.7548126653649616`*^9, 
+  3.7548128851174016`*^9, 3.7548129252238507`*^9}],
+
+Cell[BoxData["\<\"Attention:\\nThe following names of variables are \
+preserved: \\nxc, xC, Mgdd, Mguu, dim, gdd, guu, \[CapitalGamma]udd, Ruddd, \
+SR, Rdd, Ruu, Rdddd, Ruuuu, Guu, Gdd. \\nxc is the coordinate, like \
+xc[0]->\\!\\(\\*SuperscriptBox[\\(x\\), \\(0\\)]\\) \\ngdd -> \
+\\!\\(\\*SubscriptBox[\\(g\\), \\(\[Mu]\[Nu]\\)]\\), like \
+gdd[0,0]->\\!\\(\\*SubscriptBox[\\(g\\), \\(00\\)]\\). \\nguu -> \
+\\!\\(\\*SuperscriptBox[\\(g\\), \\(\[Mu]\[Nu]\\)]\\), like \
+guu[0,0]->\\!\\(\\*SuperscriptBox[\\(g\\), \\(00\\)]\\). ...\\nAnd \
+\[CapitalGamma]udd[]shows all the nozero components of \
+\[CapitalGamma]udd.\\n----------------------------------------------------\\n-\
+---------------------------------------------------\\nRiemann Tensor \
+\\!\\(StandardForm\\`\\*SubscriptBox[SuperscriptBox[\\(R\\), \
+\\(\[Lambda]\\)], \\(\[Mu]\[Nu]k\\)] = \\\\ \
+\\*SubscriptBox[SuperscriptBox[\\(\[CapitalGamma]\\), \\(\[Lambda]\\)], \\(\
+\[Mu]k, \[Nu]\\)] - \\\\ \
+\\*SubscriptBox[SuperscriptBox[\\(\[CapitalGamma]\\), \\(\[Lambda]\\)], \\(\
+\[Mu]\[Nu], k\\)] + \\\\ \
+\\*SubscriptBox[SuperscriptBox[\\(\[CapitalGamma]\\), \\(\[Rho]\\)], \
+\\(\[Mu]k\\)] \\*SubscriptBox[SuperscriptBox[\\(\[CapitalGamma]\\), \\(\
+\[Lambda]\\)], \\(\[Nu]\[Rho]\\)] - \\\\ \\*SubscriptBox[SuperscriptBox[\\(\
+\[CapitalGamma]\\), \\(\[Rho]\\)], \\(\[Mu]\[Nu]\\)] \
+\\*SubscriptBox[SuperscriptBox[\\(\[CapitalGamma]\\), \\(\[Lambda]\\)], \\(k\
+\[Rho]\\)]\\).\\nRicci Tensor \\!\\(StandardForm\\`\\*SubscriptBox[\\(R\\), \
+\\(\[Mu]\[Nu]\\)] = \\\\ \\*SubscriptBox[SuperscriptBox[\\(R\\), \\(\[Lambda]\
+\\)], \\(\\(\[Mu]\[Lambda]\[Nu]\\)\\(\\\\ \\\\ \\)\\)]\\).\\nEinstein Tensor \
+\\!\\(StandardForm\\`\\*SubscriptBox[\\(G\\), \\(\[Mu]\[Nu]\\)] = \\\\ \
+\\*SubscriptBox[\\(R\\), \\(\[Mu]\[Nu]\\)]\\)-\\!\\(\\*FractionBox[\\(1\\), \
+\\(2\\)]\\)\\!\\(\\*SubscriptBox[\\(g\\), \\(\[Mu]\[Nu]\\)]\\)R .\\nEinstein \
+equation \\!\\(\\*SubscriptBox[\\(G\\), \
+\\(\[Mu]\[Nu]\\)]\\)+\\!\\(\\*SubscriptBox[\\(\[CapitalLambda]g\\), \\(\[Mu]\
+\[Nu]\\)]\\)=8\\!\\(\\*SubscriptBox[\\(\[Pi]G\\), \\(N\\)]\\) \
+\\!\\(\\*SubscriptBox[\\(T\\), \\(\[Mu]\[Nu]\\)]\\).\\nSpin connection \\!\\(\
+\\*SubscriptBox[\\(\[Omega]\\), \\(\[Mu]\\)]\\)=\\!\\(\\*FractionBox[\\(\
+\[ImaginaryI]\\), \\(2\\)]\\)\\!\\(\\*SubscriptBox[\\(I\\), \
+\\(AB\\)]\\)\\!\\(\\*SuperscriptBox[SubscriptBox[\\(\[Omega]\\), \
+\\(\[Mu]\\)], \\(AB\\)]\\)=\\!\\(\\*FractionBox[\\(1\\), \
+\\(8\\)]\\)\\!\\(\\*SubscriptBox[\\(\[Omega]\\), \
+\\(\[Mu]AB\\)]\\)[\\!\\(\\*SuperscriptBox[\\(\[Gamma]\\), \
+\\(A\\)]\\),\\!\\(\\*SuperscriptBox[\\(\[Gamma]\\), \\(B\\)]\\)].\\nThe \
+generators of SO(1,D-1) in the spinor representation \
+are\\n\\!\\(\\*SuperscriptBox[\\(I\\), \\(AB\\)]\\)=-\\!\\(\\*FractionBox[\\(\
+\[ImaginaryI]\\), \\(4\\)]\\)[\\!\\(\\*SuperscriptBox[\\(\[Gamma]\\), \
+\\(A\\)]\\),\\!\\(\\*SuperscriptBox[\\(\[Gamma]\\), \\(B\\)]\\)].\\nThe \
+covariant derivative: \\!\\(\\*SubscriptBox[\\(D\\), \
+\\(M\\)]\\)=\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \
+\\(M\\)]\\)+\\!\\(\\*SubscriptBox[\\(\[Omega]\\), \
+\\(M\\)]\\)\\n-----------------------------------------------------\"\>"], \
+"Print",
+ CellChangeTimes->{3.754812665380615*^9, 3.7548128851330223`*^9, 
+  3.7548129252238507`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Rdd", "[", "]"}], "//", "Simplify"}]], "Input",
+ CellChangeTimes->{{3.480478838305477*^9, 3.4804789104194765`*^9}, {
+   3.480478960408477*^9, 3.480478961072477*^9}, 3.480480196239477*^9, 
+   3.480480746520477*^9, {3.6119815715518637`*^9, 3.611981579867792*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["\<\"The non zero parts of Ricci Tensor \\!\\(TraditionalForm\\`\
+\\*SubscriptBox[\\(R\\), \\(\[Mu]\[Nu]\\)] = \\\\ \
+\\*SubscriptBox[SuperscriptBox[\\(R\\), \\(\[Lambda]\\)], \
+\\(\\(\[Mu]\[Lambda]\[Nu]\\)\\(\\\\ \\\\ \\)\\)]\\)are:  \"\>"], "Print",
+ CellChangeTimes->{3.4804844324796767`*^9, 3.607916010705394*^9, 
+  3.607916665298813*^9, 3.6083280724351587`*^9, 3.608328111575797*^9, 
+  3.608407866481736*^9, 3.6119805275223637`*^9, 3.611981550985436*^9, 
+  3.611981581503886*^9, 3.6119888687647743`*^9, 3.7431413470718703`*^9, 
+  3.7548126740552807`*^9, 3.754812893135569*^9, 3.7548129294281197`*^9}],
+
+Cell[BoxData["\<\"------------------------------------------------------------\
+---------\"\>"], "Print",
+ CellChangeTimes->{3.4804844324796767`*^9, 3.607916010705394*^9, 
+  3.607916665298813*^9, 3.6083280724351587`*^9, 3.608328111575797*^9, 
+  3.608407866481736*^9, 3.6119805275223637`*^9, 3.611981550985436*^9, 
+  3.611981581503886*^9, 3.6119888687647743`*^9, 3.7431413470718703`*^9, 
+  3.7548126740552807`*^9, 3.754812893135569*^9, 3.75481292944374*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Ruddd", "[", "]"}], ";"}]], "Input",
+ CellChangeTimes->{3.607916708462721*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["\<\"The defination of Riemann Tensor is: \"\>"], "Print",
+ CellChangeTimes->{3.480482280930477*^9, 3.480483698096877*^9, 
+  3.4804839438436766`*^9, 3.4804844394840765`*^9, 3.607916014873519*^9, 
+  3.6079167094713087`*^9, 3.60840791028778*^9, 3.611980534838128*^9, 
+  3.61198158814277*^9, 3.6119888721547422`*^9, 3.7431413492471933`*^9, 
+  3.75481267707086*^9, 3.754812896199835*^9, 3.7548129317092524`*^9}],
+
+Cell[BoxData["\<\"\\!\\(TraditionalForm\\`\\*SubscriptBox[SuperscriptBox[\\(R\
+\\), \\(\[Lambda]\\)], \\(\[Mu]\[Nu]k\\)] = \\\\ \
+\\*SubscriptBox[SuperscriptBox[\\(\[CapitalGamma]\\), \\(\[Lambda]\\)], \\(\
+\[Mu]k, \[Nu]\\)] - \\\\ \
+\\*SubscriptBox[SuperscriptBox[\\(\[CapitalGamma]\\), \\(\[Lambda]\\)], \\(\
+\[Mu]\[Nu], k\\)] + \\\\ \
+\\*SubscriptBox[SuperscriptBox[\\(\[CapitalGamma]\\), \\(\[Rho]\\)], \
+\\(\[Mu]k\\)] \\*SubscriptBox[SuperscriptBox[\\(\[CapitalGamma]\\), \\(\
+\[Lambda]\\)], \\(\[Nu]\[Rho]\\)] - \\\\ \\*SubscriptBox[SuperscriptBox[\\(\
+\[CapitalGamma]\\), \\(\[Rho]\\)], \\(\[Mu]\[Nu]\\)] \
+\\*SubscriptBox[SuperscriptBox[\\(\[CapitalGamma]\\), \\(\[Lambda]\\)], \\(k\
+\[Rho]\\)]\\)\"\>"], "Print",
+ CellChangeTimes->{3.480482280930477*^9, 3.480483698096877*^9, 
+  3.4804839438436766`*^9, 3.4804844394840765`*^9, 3.607916014873519*^9, 
+  3.6079167094713087`*^9, 3.60840791028778*^9, 3.611980534838128*^9, 
+  3.61198158814277*^9, 3.6119888721547422`*^9, 3.7431413492471933`*^9, 
+  3.75481267707086*^9, 3.754812896199835*^9, 3.7548129317249084`*^9}],
+
+Cell[BoxData["\<\"The non zero parts of \\!\\(\\*SubscriptBox[SuperscriptBox[\
+\\(R\\), \\(\[Lambda]\\)], \\(\[Mu]\[Nu]k\\)]\\) are :\"\>"], "Print",
+ CellChangeTimes->{3.480482280930477*^9, 3.480483698096877*^9, 
+  3.4804839438436766`*^9, 3.4804844394840765`*^9, 3.607916014873519*^9, 
+  3.6079167094713087`*^9, 3.60840791028778*^9, 3.611980534838128*^9, 
+  3.61198158814277*^9, 3.6119888721547422`*^9, 3.7431413492471933`*^9, 
+  3.75481267707086*^9, 3.754812896199835*^9, 3.7548129317249084`*^9}],
+
+Cell[BoxData["\<\"------------------------------------------------------------\
+---------\"\>"], "Print",
+ CellChangeTimes->{3.480482280930477*^9, 3.480483698096877*^9, 
+  3.4804839438436766`*^9, 3.4804844394840765`*^9, 3.607916014873519*^9, 
+  3.6079167094713087`*^9, 3.60840791028778*^9, 3.611980534838128*^9, 
+  3.61198158814277*^9, 3.6119888721547422`*^9, 3.7431413492471933`*^9, 
+  3.75481267707086*^9, 3.754812896199835*^9, 3.7548129317405405`*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"SR", "//", "Simplify"}]], "Input",
+ CellChangeTimes->{{3.607916036226371*^9, 3.607916037637928*^9}, {
+  3.611980644819799*^9, 3.611980657062916*^9}}],
+
+Cell[BoxData["0"], "Output",
+ CellChangeTimes->{
+  3.60832811788938*^9, 3.608407930064642*^9, 3.611980540294264*^9, {
+   3.611980646128621*^9, 3.611980658345422*^9}, 3.611981559152377*^9, 
+   3.61198887822136*^9, 3.7431413594260683`*^9, 3.7548126799586306`*^9, 
+   3.7548128982778463`*^9, 3.7548129335841084`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Ruuuu", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.480481896258277*^9, 3.4804819021238766`*^9}, {
+  3.480483705319677*^9, 3.480483737845677*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["\<\"The non zero parts of \\!\\(\\*SuperscriptBox[\\(R\\), \\(\
+\[Mu]\[Nu]\[Lambda]\[Rho]\\)]\\) are :\"\>"], "Print",
+ CellChangeTimes->{3.480483738859677*^9, 3.4804839527200766`*^9, 
+  3.607916055375628*^9, 3.611980605695984*^9, 3.611981614318882*^9, 
+  3.7431413642110977`*^9, 3.7548126853798847`*^9, 3.7548129005440645`*^9, 
+  3.754812935817922*^9}],
+
+Cell[BoxData["\<\"------------------------------------------------------------\
+---------\"\>"], "Print",
+ CellChangeTimes->{3.480483738859677*^9, 3.4804839527200766`*^9, 
+  3.607916055375628*^9, 3.611980605695984*^9, 3.611981614318882*^9, 
+  3.7431413642110977`*^9, 3.7548126853798847`*^9, 3.7548129005440645`*^9, 
+  3.754812935833825*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Rdddd", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.7548127161748776`*^9, 3.754812721021604*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["\<\"The non zero parts of \\!\\(\\*SubscriptBox[\\(R\\), \\(\
+\[Mu]\[Nu]\[Lambda]\[Rho]\\)]\\) are :\"\>"], "Print",
+ CellChangeTimes->{3.7548127316962104`*^9, 3.754812903873027*^9, 
+  3.7548129374113445`*^9}],
+
+Cell[BoxData["\<\"------------------------------------------------------------\
+---------\"\>"], "Print",
+ CellChangeTimes->{3.7548127316962104`*^9, 3.754812903873027*^9, 
+  3.7548129374269257`*^9}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1350, 629},
+WindowMargins->{{268, Automatic}, {Automatic, 134}},
+PrivateNotebookOptions->{"VersionedStylesheet"->{"Default.nb"[8.] -> False}},
+Magnification:>2. Inherited,
+FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (2016\:5e7410\:67088\
+\:65e5)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[567, 22, 4080, 101, 698, "Input"],
+Cell[4650, 125, 531, 16, 66, "Output"],
+Cell[5184, 143, 3215, 49, 737, "Print"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8436, 197, 296, 5, 91, "Input"],
+Cell[CellGroupData[{
+Cell[8757, 206, 618, 8, 47, "Print"],
+Cell[9378, 216, 456, 6, 44, "Print"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9883, 228, 113, 3, 61, "Input"],
+Cell[CellGroupData[{
+Cell[10021, 235, 420, 5, 44, "Print"],
+Cell[10444, 242, 1070, 16, 47, "Print"],
+Cell[11517, 260, 498, 6, 47, "Print"],
+Cell[12018, 268, 454, 6, 44, "Print"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12521, 280, 173, 3, 91, "Input"],
+Cell[12697, 285, 313, 5, 61, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13047, 295, 170, 3, 61, "Input"],
+Cell[CellGroupData[{
+Cell[13242, 302, 367, 5, 44, "Print"],
+Cell[13612, 309, 340, 5, 44, "Print"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[14001, 320, 121, 2, 61, "Input"],
+Cell[CellGroupData[{
+Cell[14147, 326, 223, 3, 47, "Print"],
+Cell[14373, 331, 198, 3, 44, "Print"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
